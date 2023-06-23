@@ -4,12 +4,7 @@ public class SquareEquation
 {
     public static double[] Solve(double a, double b, double c)
     {
-        if (Math.Abs(a) < double.Epsilon)
-        {
-            throw new ArgumentException();
-        }
-
-        if (double.IsNaN(a) || double.IsNaN(b) || double.IsPositiveInfinity(a) || double.IsPositiveInfinity(b) || double.IsNegativeInfinity(a) || double.IsNegativeInfinity(b))
+        if (Math.Abs(a) < double.Epsilon || new double[] {a, b, c}.Any(double.IsNaN) || new double[] { a, b, c }.Any(double.IsInfinity))
         {
             throw new ArgumentException();
         }
@@ -21,10 +16,10 @@ public class SquareEquation
         if (Math.Abs(d) < double.Epsilon)
         {
             double x = -b / 2 * a;
-            return new double[] { x, x };
+            return new double[] { x };
         }
 
-        double x1 = -(b + Math.Sign(b) * Math.Pow(d, 0.5) / 2 * a);
+        double x1 = -(b + Math.Sign(b) * Math.Sqrt(d) / 2 * a);
         double x2 = c / x1;
         return new double[] { x1, x2 };
     }
