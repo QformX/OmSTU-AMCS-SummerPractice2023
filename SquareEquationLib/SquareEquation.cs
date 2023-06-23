@@ -9,7 +9,7 @@ public class SquareEquation
             throw new ArgumentException();
         }
 
-        double d = Math.Pow(b, 2.0) - 4 * c;
+        double d = Math.Pow(b, 2.0) - (4 * a * c);
 
         if (d < 0) { return Array.Empty<double>(); }
         
@@ -19,8 +19,8 @@ public class SquareEquation
             return new double[] { x };
         }
 
-        double x1 = -((b + Math.Sign(b) * Math.Sqrt(d)) / 2);
-        double x2 = c / x1;
+        double x1 = -((b + Math.Sign(b) * Math.Sqrt(d)) / (2*a));
+        double x2 = c / (x1 * a);
         return new double[] { x1, x2 };
     }
 }
