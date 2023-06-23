@@ -6,12 +6,12 @@ public class SquareEquation
     {
         if (Math.Abs(a) < double.Epsilon || new double[] {a, b, c}.Any(double.IsNaN) || new double[] { a, b, c }.Any(double.IsInfinity))
         {
-            throw new ArgumentException();
+            throw new System.ArgumentException();
         }
 
         double d = b * b - 4 * a * c;
 
-        if (d < 0) { return new double[0]; }
+        if (d < 0) { return Array.Empty<double>(); }
         
         if (Math.Abs(d) < double.Epsilon)
         {
