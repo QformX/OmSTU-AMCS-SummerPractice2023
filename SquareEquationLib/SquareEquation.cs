@@ -4,7 +4,7 @@ public class SquareEquation
 {
     public static double[] Solve(double a, double b, double c)
     {
-        if (Math.Abs(a) < double.Epsilon || (Math.Abs(a) < double.Epsilon && Math.Abs(b) < double.Epsilon && Math.Abs(c) < double.Epsilon) || (new double[] {a, b, c}).Any(double.IsNaN) || (new double[] { a, b, c }).Any(double.IsInfinity) || )
+        if (Math.Abs(a) < double.Epsilon || (Math.Abs(a) < double.Epsilon && Math.Abs(b) < double.Epsilon && Math.Abs(c) < double.Epsilon) || (new double[] {a, b, c}).Any(double.IsNaN) || (new double[] { a, b, c }).Any(double.IsInfinity))
         {
             throw new ArgumentException();
         }
