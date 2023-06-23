@@ -18,7 +18,7 @@ public class SquareEquation
 
         if (d < 0) { return new double[0]; }
         
-        if (d == 0)
+        if (Math.Abs(d) < double.Epsilon)
         {
             double x = -b / 2 * a;
             return new double[] { x, x };
