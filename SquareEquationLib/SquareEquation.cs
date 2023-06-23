@@ -4,12 +4,12 @@ public class SquareEquation
 {
     public static double[] Solve(double a, double b, double c)
     {
-        if (a == 0)
+        if (Math.Abs(a) < double.Epsilon)
         {
             throw new ArgumentException();
         }
 
-        if (a == double.NaN || b == double.NaN || a == double.MaxValue || b == double.MaxValue)
+        if (double.IsNaN(a) || double.IsNaN(b) || double.IsPositiveInfinity(a) || double.IsPositiveInfinity(b) || double.IsNegativeInfinity(a) || double.IsNegativeInfinity(b))
         {
             throw new ArgumentException();
         }
