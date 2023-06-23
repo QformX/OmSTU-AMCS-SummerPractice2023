@@ -4,14 +4,14 @@ public class SquareEquation
 {
     public static double[] Solve(double a, double b, double c)
     {
-        if (Math.Abs(a) < double.Epsilon || (new double[] {a, b, c}).Any(double.IsNaN) || (new double[] { a, b, c }).Any(double.IsInfinity))
+        if (Math.Abs(a) < double.Epsilon || (Math.Abs(a) < double.Epsilon && Math.Abs(b) < double.Epsilon && Math.Abs(c) < double.Epsilon) || (new double[] {a, b, c}).Any(double.IsNaN) || (new double[] { a, b, c }).Any(double.IsInfinity) || )
         {
             throw new ArgumentException();
         }
 
         double d = Math.Pow(b, 2.0) - (4 * a * c);
 
-        if (d < 0) { return Array.Empty<double>(); }
+        if (d < 0.0) { return Array.Empty<double>(); }
         
         if (Math.Abs(d) < double.Epsilon)
         {
