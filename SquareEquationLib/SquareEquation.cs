@@ -19,7 +19,7 @@ public class SquareEquation
             return new double[] { x };
         }
 
-        double x1 = -(b + Math.Sign(b) * Math.Sqrt(d) / 2 * a);
+        double x1 = -(b + Math.Sign(b) * Math.Sqrt(d) / 2);
         double x2 = c / x1;
         return new double[] { x1, x2 };
     }
