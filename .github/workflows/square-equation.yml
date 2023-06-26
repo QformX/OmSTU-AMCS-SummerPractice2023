@@ -2,7 +2,7 @@ name: square equation test
 
 on:
   push:
-    branches: ["square_equation"]
+    branches: ["unit_tests"]
 
 jobs:
   build:
@@ -21,6 +21,9 @@ jobs:
 
       - name: Build
         run: dotnet build SquareEquationLib --no-restore /p:ContinuousIntegrationBuild=true
+        
+      - name: UnitTest
+        run: dotnet test
 
       - name: Test
         run: ./SquareEquationTest ./SquareEquationLib/bin/Debug/net7.0/SquareEquationLib.dll
