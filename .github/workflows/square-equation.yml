@@ -17,13 +17,13 @@ jobs:
           dotnet-version: 7.0.x
 
       - name: Restore dependencies
-        run: dotnet restore SquareEquationLib
+        run: dotnet restore SquareEquation
 
       - name: Build
-        run: dotnet build SquareEquationLib --no-restore /p:ContinuousIntegrationBuild=true
+        run: dotnet build SquareEquation --no-restore /p:ContinuousIntegrationBuild=true
         
       - name: UnitTest
         run: dotnet test
 
       - name: Test
-        run: ./SquareEquationTest ./SquareEquationLib/bin/Debug/net7.0/SquareEquationLib.dll
+        run: ./SquareEquationTest ./SquareEquation/bin/Debug/net7.0/SquareEquation.dll
