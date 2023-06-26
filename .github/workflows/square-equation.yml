@@ -27,3 +27,6 @@ jobs:
 
       - name: Test
         run: ./SquareEquationTest ./SquareEquation/bin/Debug/net7.0/SquareEquation.dll
+        
+      - name: Coverage
+        run: dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura 
