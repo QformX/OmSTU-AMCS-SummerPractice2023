@@ -26,7 +26,7 @@ public class SquareEquationLib_isSolutionRight
     [Fact]
     public void Solve_ReturnsEmpty()
     {
-        double[] expected = new double[] { };
+        double[] expected = Array.Empty<double>();
         double[] actual = SquareEquation.Solve(3, 1, 2);
 
         Assert.Equal(expected, actual);

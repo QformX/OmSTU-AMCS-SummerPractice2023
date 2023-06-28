@@ -11,7 +11,7 @@ namespace SpecFlowTestingProject.StepDefinitions
     {
         private double[] array = new double[3];
         private double[]? result;
-        Exception? exception;
+        Exception exception = new();
 
         [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), (.*)\)")]
         public void GivenКвадратноеУравнениеСКоэффициентами(string p0, string p1, string p2)
