@@ -14,7 +14,7 @@ namespace SpecFlowTestingProject.StepDefinitions
         Exception exception = new();
 
         [Given(@"Квадратное уравнение с коэффициентами \((.*), (.*), (.*)\)")]
-        public void GivenКвадратноеУравнениеСКоэффициентами(string p0, string p1, string p2)
+        public void GivenCofficients(string p0, string p1, string p2)
         {
             double _p0 = double.Parse(p0, System.Globalization.CultureInfo.InvariantCulture);
             double _p1 = double.Parse(p1, System.Globalization.CultureInfo.InvariantCulture);
@@ -24,7 +24,7 @@ namespace SpecFlowTestingProject.StepDefinitions
         }
 
         [When(@"вычисляются корни квадратного уравнения")]
-        public void WhenВычисляютсяКорниКвадратногоУравнения()
+        public void WhenSolvingTheRoots()
         {
             try
             {
@@ -55,7 +55,7 @@ namespace SpecFlowTestingProject.StepDefinitions
         }
 
         [Then(@"выбрасывается исключение ArgumentException")]
-        public void ThenThrowArgEx()
+        public void ThenThrowArgumentException()
         {
             Assert.Equal("Invalid Values", exception.Message);
         }
