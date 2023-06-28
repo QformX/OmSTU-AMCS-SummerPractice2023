@@ -10,3 +10,15 @@ C:\Users\QForm\source\repos\OmSTU-AMCS-SummerPractice2023\unit-testing-using-dot
 C:\Users\QForm\source\repos\OmSTU-AMCS-SummerPractice2023\unit-testing-using-dotnet-test\SquareEquation\obj\Debug\net7.0\refint\SquareEquation.dll
 C:\Users\QForm\source\repos\OmSTU-AMCS-SummerPractice2023\unit-testing-using-dotnet-test\SquareEquation\obj\Debug\net7.0\SquareEquation.pdb
 C:\Users\QForm\source\repos\OmSTU-AMCS-SummerPractice2023\unit-testing-using-dotnet-test\SquareEquation\obj\Debug\net7.0\ref\SquareEquation.dll
+C:\Users\QForm\Source\Repos\OmSTU-AMCS-SummerPractice2023\SquareEquation\bin\Debug\net7.0\SquareEquation.deps.json
+C:\Users\QForm\Source\Repos\OmSTU-AMCS-SummerPractice2023\SquareEquation\bin\Debug\net7.0\SquareEquation.dll
+C:\Users\QForm\Source\Repos\OmSTU-AMCS-SummerPractice2023\SquareEquation\bin\Debug\net7.0\SquareEquation.pdb
+C:\Users\QForm\Source\Repos\OmSTU-AMCS-SummerPractice2023\SquareEquation\obj\Debug\net7.0\SquareEquation.csproj.AssemblyReference.cache
+C:\Users\QForm\Source\Repos\OmSTU-AMCS-SummerPractice2023\SquareEquation\obj\Debug\net7.0\SquareEquation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\QForm\Source\Repos\OmSTU-AMCS-SummerPractice2023\SquareEquation\obj\Debug\net7.0\SquareEquation.AssemblyInfoInputs.cache
+C:\Users\QForm\Source\Repos\OmSTU-AMCS-SummerPractice2023\SquareEquation\obj\Debug\net7.0\SquareEquation.AssemblyInfo.cs
+C:\Users\QForm\Source\Repos\OmSTU-AMCS-SummerPractice2023\SquareEquation\obj\Debug\net7.0\SquareEquation.csproj.CoreCompileInputs.cache
+C:\Users\QForm\Source\Repos\OmSTU-AMCS-SummerPractice2023\SquareEquation\obj\Debug\net7.0\SquareEquation.dll
+C:\Users\QForm\Source\Repos\OmSTU-AMCS-SummerPractice2023\SquareEquation\obj\Debug\net7.0\refint\SquareEquation.dll
+C:\Users\QForm\Source\Repos\OmSTU-AMCS-SummerPractice2023\SquareEquation\obj\Debug\net7.0\SquareEquation.pdb
+C:\Users\QForm\Source\Repos\OmSTU-AMCS-SummerPractice2023\SquareEquation\obj\Debug\net7.0\ref\SquareEquation.dll

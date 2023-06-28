@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\QForm\\source\\repos\\OmSTU-AMCS-SummerPractice2023\\unit-testing-using-dotnet-test\\SquareEquation\\SquareEquation.csproj": {}
+    "C:\\Users\\QForm\\source\\repos\\OmSTU-AMCS-SummerPractice2023\\SquareEquation\\SquareEquation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\QForm\\source\\repos\\OmSTU-AMCS-SummerPractice2023\\unit-testing-using-dotnet-test\\SquareEquation\\SquareEquation.csproj": {
+    "C:\\Users\\QForm\\source\\repos\\OmSTU-AMCS-SummerPractice2023\\SquareEquation\\SquareEquation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\QForm\\source\\repos\\OmSTU-AMCS-SummerPractice2023\\unit-testing-using-dotnet-test\\SquareEquation\\SquareEquation.csproj",
+        "projectUniqueName": "C:\\Users\\QForm\\source\\repos\\OmSTU-AMCS-SummerPractice2023\\SquareEquation\\SquareEquation.csproj",
         "projectName": "SquareEquation",
-        "projectPath": "C:\\Users\\QForm\\source\\repos\\OmSTU-AMCS-SummerPractice2023\\unit-testing-using-dotnet-test\\SquareEquation\\SquareEquation.csproj",
+        "projectPath": "C:\\Users\\QForm\\source\\repos\\OmSTU-AMCS-SummerPractice2023\\SquareEquation\\SquareEquation.csproj",
         "packagesPath": "C:\\Users\\QForm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\QForm\\source\\repos\\OmSTU-AMCS-SummerPractice2023\\unit-testing-using-dotnet-test\\SquareEquation\\obj\\",
+        "outputPath": "C:\\Users\\QForm\\Source\\Repos\\OmSTU-AMCS-SummerPractice2023\\SquareEquation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

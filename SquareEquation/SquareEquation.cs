@@ -4,7 +4,7 @@ public class SquareEquation
 {
     public static double[] Solve(double a, double b, double c)
     {
-        double eps = 1e-9;
+        double eps = 1e-6;
         if (Math.Abs(a) < eps || (new double[] { a, b, c }).Any(double.IsNaN) || (new double[] { a, b, c }).Any(double.IsInfinity))
         {
             throw new ArgumentException("Invalid Values");
@@ -12,6 +12,8 @@ public class SquareEquation
 
         b = b / a;
         c = c / a;
+        double x1 = 0;
+        double x2 = 0;
 
         double d = Math.Pow(b, 2.0) - (4 * c);
 
@@ -24,8 +26,16 @@ public class SquareEquation
             return new double[] { x };
         }
 
-        double x1 = -((b + Math.Sign(b) * Math.Sqrt(d)) / 2);
-        double x2 = c / x1;
-        return new double[] { x1, x2 };
+        if (b < eps)
+        {
+            x1 = -((b + Math.Sqrt(d)) / 2);
+        }
+        else
+        {
+            x1 = -((b + Math.Sign(b) * Math.Sqrt(d)) / 2);
+        }
+
+        x2 = c / x1;
+        return new double[] { x2, x1 };
     }
 }

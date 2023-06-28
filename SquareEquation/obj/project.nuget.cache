@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s7eoMm00q8eQnRG2df5d6PrzRz7qQPCvBgOPXyncYc1qeBJmp+5IHUb58q/GSsXd9LVnkemudSwUKOqesDeMpQ==",
+  "dgSpecHash": "wvo9ETdAF7bkhU15d2kDRy59zYHjGsHcpxhRMhhLh8gW0Plk6BBDiEAvmyZ7czIotQRgXAhbOjdnOMFdeta6Aw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\QForm\\source\\repos\\OmSTU-AMCS-SummerPractice2023\\unit-testing-using-dotnet-test\\SquareEquation\\SquareEquation.csproj",
+  "projectFilePath": "C:\\Users\\QForm\\source\\repos\\OmSTU-AMCS-SummerPractice2023\\SquareEquation\\SquareEquation.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
