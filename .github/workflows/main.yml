@@ -2,7 +2,7 @@ name: square equation test
 
 on:
   push:
-    branches: ["solution"]
+    branches: ["spaceship_fuel_angle"]
 
 jobs:
   build:
