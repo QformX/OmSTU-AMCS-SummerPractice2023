@@ -57,7 +57,8 @@ namespace SpaceCadets
 
         public static List<dynamic> GetStudentsWithHighestGPA(List<Cadet> cadets)
         {
-            var cadetsArrayWithMarks = cadets.GroupBy(p => p.Name).Select(m => new
+            var cadetsArrayWithMarks = cadets.GroupBy(p => p.Name)
+                .Select(m => new
             {
                 Name = m.Key,
                 Marks = m.Select(v => v.Mark).ToArray()
@@ -65,49 +66,60 @@ namespace SpaceCadets
 
             var highGPA = cadetsArrayWithMarks.Max(c => c.Marks.Sum() / c.Marks.Length);
 
-            var cadetsWithHighestGPA = cadetsArrayWithMarks.Where(c => c.Marks.Sum() / c.Marks.Length == highGPA).Select(m => new
+            var cadetsWithHighestGPA = cadetsArrayWithMarks
+                .Where(c => c.Marks.Sum() / c.Marks.Length == highGPA)
+                .Select(m => new
             {
                 m.Name,
                 Mark = Math.Round(m.Marks.Sum() / m.Marks.Length, 2)
-            }).ToList<dynamic>();
+            })
+                .ToList<dynamic>();
 
             return cadetsWithHighestGPA;
         }
 
         public static List<dynamic> CalculateGPAByDiscipline(List<Cadet> cadets)
         {
-            var disciplinesWithMarks = cadets.GroupBy(p => p.Discipline).Select(m => new
+            var disciplinesWithMarks = cadets
+                .GroupBy(p => p.Discipline)
+                .Select(m => new
             {
                 Discipline = m.Key,
                 Marks = m.Select(p => p.Mark).ToArray()
             });
 
-            var disciplinesWithGPA = disciplinesWithMarks.Select(m => new
+            var disciplinesWithGPA = disciplinesWithMarks
+                .Select(m => new
             {
                 m.Discipline,
                 GPA = Math.Round(m.Marks.Sum() / m.Marks.Length, 3)
-            }).ToList<dynamic>();
+            })
+                .ToList<dynamic>();
 
             return disciplinesWithGPA;
         }
 
         public static List<dynamic> GetBestGroupsByDiscipline(List<Cadet> cadets)
         {
-            var cadetsByGroup = cadets.GroupBy(p => new {
+            var cadetsByGroup = cadets
+                .GroupBy(p => new {
                 p.Discipline,
                 p.Group
-            }).Select(g => new
+            })
+                .Select(g => new
             {
                 g.Key.Discipline,
                 g.Key.Group,
                 Mark = g.Average(v => v.Mark)
-            }).GroupBy(p => p.Discipline)
-            .Select(q => new
+            })
+                .GroupBy(p => p.Discipline)
+                .Select(q => new
             {
                 Discipline = q.Key,
                 Group = q.Where(k => k.Mark == q.Max(z => z.Mark)).Select(k => k.Group).ToArray()[0],
                 GPA = q.Max(k => k.Mark)
-            }).ToList<dynamic>();
+            })
+                .ToList<dynamic>();
 
             return cadetsByGroup;
         }
