@@ -52,9 +52,6 @@ namespace SpaceCadets
             {
                 sw.Write(outputFile);
             }
-
-            Console.WriteLine("Готово");
-            Console.ReadKey();
         }
 
         public static List<dynamic> GetStudentsWithHighestGPA(List<Cadet> cadets)
