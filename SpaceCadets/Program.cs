@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
+
 namespace SpaceCadets
 {
     internal class Program
@@ -16,7 +17,7 @@ namespace SpaceCadets
             dynamic jsonObject = new JObject();
             List<dynamic>? outputObject = new List<dynamic>();
 
-            using(StreamReader sr = new(inputFilePath))
+            using (StreamReader sr = new(inputFilePath))
             {
                 inputFile = sr.ReadToEnd();
             }
@@ -48,7 +49,7 @@ namespace SpaceCadets
 
             outputFile = JsonConvert.SerializeObject(new { Response = outputObject }, Formatting.Indented);
 
-            using(StreamWriter sw = new(outputFilePath))
+            using (StreamWriter sw = new(outputFilePath))
             {
                 sw.Write(outputFile);
             }
